@@ -29,7 +29,7 @@
             $result = $conn->query($sql);
             $row = $result->fetch_assoc();
             if($result->num_rows == 0){
-                return "0 kg";
+                return "0";
             }else{
                 return $row['mennyiseg'];
             }
